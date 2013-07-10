@@ -1,0 +1,114 @@
+//import all of our nifty compass helpers
+@import "compass/reset";
+@import "compass/css3/transition";
+    //http://compass-style.org/reference/compass/css3/transition/
+
+//vars
+    //we can use vars throughout our project so that if we want to change a color somewhere later, we don't have to change it 9001 times, just right here
+$sans-stack: Helvetica, Arial, Sans-Serif;
+
+$light-color: #fff;
+$dark-color: darken($light-color, 100%);
+ //sweet ass color manipulations
+
+#container {
+    overflow:hidden;
+    width:320px;
+    height:480;
+    position:relative;
+}
+
+#scorecard {
+    position: absolute;
+        // to get your drop down working you needed to add position relative to your container and add position absolute to this element
+    margin:0 auto;
+}
+
+#effect {
+    text-align:center;
+    position: relative;
+    background: #eee;
+    // in scss you can nest parents and children together in a single element
+    // it's like object oriented css
+        //http://coding.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/
+    &:after{
+        content:"";
+        position: absolute;
+        top: 100%;
+        right: 20px;
+        width:50px;
+        height:15px;
+        border-radius:0px 0px 5px 5px;
+        background:#eee;
+    }
+}
+
+.drop {
+    width: 320px;
+    height: 100px;
+}
+#tab {
+    position: relative;
+    background:#eee;
+    float:right;
+    width:50px;
+    height:20px;
+}
+
+#display {
+    width: 320px;
+    height:400px;
+    background: #333;
+}
+
+#user {
+    float:left;
+    width: 160px;
+    height:200px;
+    background: #999;
+}
+
+#cpu {
+    float:left;
+    width: 160px;
+    height:200px;
+    background: #666;
+}
+
+// try not to rely on nested divs so much - it clutters your markup and can make js a nightmare later.
+// use css selectors to better target elements in the dom
+// take this as a quiz, and google whatever you need help with
+    // http://milanlandaverde.com/css-quiz
+#input div{
+    width:30%;
+    margin:0 1.5%;
+    text-align:center;
+    display:inline-block;
+    float:left;
+    cursor: pointer;
+    overflow: hidden;
+    background: rgb(241, 102, 81);
+    color: $light-color;
+    text-align: center;
+    box-shadow: 0px 5px 0px 0px #999;
+    font-family: $sans-stack;
+    font-size: 2em;
+    line-height:2em;
+    font-weight:700;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    @include single-transition(background-color, .25s, ease-in-out);
+        // this takes care of all the vendor prefixes for us
+    &:hover{
+        transition: background-color 0.8s ease;
+        background: rgb(214, 43, 17);
+    }
+    &:active{
+        transition: all 0.01s ease;
+        position: relative;
+        box-shadow: 0px 2px 0px 0px #999;
+        top: 2px;
+    }
+}

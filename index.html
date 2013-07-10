@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>RPS</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+    <div id="scorecard">
+        <div id="hud" class="drop">
+            <div id="effect" class="drop">SCORE</div>
+        </div>
+        <!-- tab for the dropdown scorecard <div id="tab"></div>!--></div>
+    <div id="display">
+        <div id="user"></div>
+        <div id="cpu"></div>
+    </div>
+    <div id="input">
+        <div>r</div>
+        <div>p</div>
+        <div>s</div>
+    </div>
+</div>
+
+<!-- scripts -->
+<!-- check to see if the user has our version of jquery cached, if they don't load our own -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<script src="js/script.js"></script>
+</body>
+</html>

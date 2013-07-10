@@ -1,0 +1,173 @@
+/* line 17, ../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 14, ../sass/screen.scss */
+#container {
+  overflow: hidden;
+  width: 320px;
+  height: 480;
+  position: relative;
+}
+
+/* line 21, ../sass/screen.scss */
+#scorecard {
+  position: absolute;
+  margin: 0 auto;
+}
+
+/* line 27, ../sass/screen.scss */
+#effect {
+  text-align: center;
+  position: relative;
+  background: #eee;
+}
+/* line 34, ../sass/screen.scss */
+#effect:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 20px;
+  width: 50px;
+  height: 15px;
+  border-radius: 0px 0px 5px 5px;
+  background: #eee;
+}
+
+/* line 46, ../sass/screen.scss */
+.drop {
+  width: 320px;
+  height: 100px;
+}
+
+/* line 50, ../sass/screen.scss */
+#tab {
+  position: relative;
+  background: #eee;
+  float: right;
+  width: 50px;
+  height: 20px;
+}
+
+/* line 58, ../sass/screen.scss */
+#display {
+  width: 320px;
+  height: 400px;
+  background: #333;
+}
+
+/* line 64, ../sass/screen.scss */
+#user {
+  float: left;
+  width: 160px;
+  height: 200px;
+  background: #999;
+}
+
+/* line 71, ../sass/screen.scss */
+#cpu {
+  float: left;
+  width: 160px;
+  height: 200px;
+  background: #666;
+}
+
+/* line 82, ../sass/screen.scss */
+#input div {
+  width: 30%;
+  margin: 0 1.5%;
+  text-align: center;
+  display: inline-block;
+  float: left;
+  cursor: pointer;
+  overflow: hidden;
+  background: #f16651;
+  color: white;
+  text-align: center;
+  box-shadow: 0px 5px 0px 0px #999;
+  font-family: Helvetica, Arial, Sans-Serif;
+  font-size: 2em;
+  line-height: 2em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  -moz-transition: background-color 0.25s ease-in-out;
+  -o-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+/* line 104, ../sass/screen.scss */
+#input div:hover {
+  transition: background-color 0.8s ease;
+  background: #d62b11;
+}
+/* line 108, ../sass/screen.scss */
+#input div:active {
+  transition: all 0.01s ease;
+  position: relative;
+  box-shadow: 0px 2px 0px 0px #999;
+  top: 2px;
+}
